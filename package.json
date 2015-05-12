@@ -11,6 +11,9 @@
   ],
   "author": "Jackey Li",
   "license": "MIT",
+  "dependencies": {
+    "jasmine": "2.3.1"
+  },
   "devDependencies": {
     "jasmine-reporters": "^2.0.0"
   }
