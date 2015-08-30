@@ -1,24 +1,3 @@
-# protractor-helper
-
-- basic protractor environment
-- reporter
-
-
-# how to start
-
-```
-npm install -g protractor
-
-cd C:\Program Files\nodejs\node_global\node_modules\protractor
-
-npm install
-
-```
-
-# protractor.config.js ≈‰÷√
-
-```
-
 /**
  * Created by Jackey Li on 2015/4/24.
  */
@@ -52,17 +31,3 @@ exports.config = {
         defaultTimeoutInterval: 30000
     }
 };
-
-```
-
-# edit configuration in webstorm
-
-```
-add a nodejs server
-
-node interpreter:C:\Program Files\nodejs\node.exe
-working directory: D:\protractor\protractor-helper
-Javascript files: C:\Program Files\nodejs\node_global\node_modules\protractor\lib\cli.js
-Application parameter: E2E/protractor_conf.js
-
-```

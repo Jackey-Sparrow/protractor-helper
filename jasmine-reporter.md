@@ -1,26 +1,6 @@
-# protractor-helper
-
-- basic protractor environment
-- reporter
-
-
-# how to start
-
 ```
-npm install -g protractor
-
-cd C:\Program Files\nodejs\node_global\node_modules\protractor
-
-npm install
-
-```
-
-# protractor.config.js 配置
-
-```
-
 /**
- * Created by Jackey Li on 2015/4/24.
+ * Created by Administrator on 2015/4/24.
  */
 exports.config = {
     directConnect: true,
@@ -55,14 +35,25 @@ exports.config = {
 
 ```
 
-# edit configuration in webstorm
+# jasmine一定要用2.0.0
 
 ```
-add a nodejs server
+npm install --save-dev jasmine-reporters@^2.0.0
 
-node interpreter:C:\Program Files\nodejs\node.exe
-working directory: D:\protractor\protractor-helper
-Javascript files: C:\Program Files\nodejs\node_global\node_modules\protractor\lib\cli.js
-Application parameter: E2E/protractor_conf.js
+```
+
+# how to use
+
+```
+
+framework: "jasmine2",
+onPrepare: function() {
+    var jasmineReporters = require('jasmine-reporters');
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+        consolidateAll: true,
+        filePrefix: 'xmloutput',
+        savePath: 'testresults'
+    }));
+}
 
 ```

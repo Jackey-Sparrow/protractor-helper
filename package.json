@@ -1,20 +1,24 @@
 {
   "name": "protractor-helper",
-  "version": "0.0.0",
-  "description": "e2e protractor test helper",
+  "version": "1.0.0",
+  "description": "protractor jasmine reporter",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jackey-Sparrow/protractor-helper.git"
+  },
   "keywords": [
-    "protractor"
+    "protractor",
+    "jasmine",
+    "reporter"
   ],
   "author": "Jackey Li",
   "license": "MIT",
-  "dependencies": {
-    "jasmine": "2.3.1"
+  "bugs": {
+    "url": "https://github.com/Jackey-Sparrow/protractor-helper/issues"
   },
-  "devDependencies": {
-    "jasmine-reporters": "^2.0.0"
-  }
+  "homepage": "https://github.com/Jackey-Sparrow/protractor-helper"
 }
