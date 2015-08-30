@@ -35,7 +35,7 @@ exports.config = {
 
 ```
 
-# jasmine一定要用2.0.0
+# jasmine must use 2.0.0
 
 ```
 npm install --save-dev jasmine-reporters@^2.0.0

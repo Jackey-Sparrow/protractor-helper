@@ -15,7 +15,7 @@ npm install
 
 ```
 
-# protractor.config.js ≈‰÷√
+# protractor.config.js setting
 
 ```
 
